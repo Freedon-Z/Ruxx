@@ -1,4 +1,4 @@
-name: Flutter Build
+name: Flutter Build for Android
 
 on:
   push:
@@ -16,7 +16,7 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.10.0'  # اختر إصدار Flutter المناسب
+          flutter-version: '3.19.0'  # تحديث إصدار Flutter لدعم Dart 3.2.1 أو أعلى
 
       - name: Install dependencies
         run: flutter pub get
@@ -25,7 +25,7 @@ jobs:
         run: flutter build apk --release
 
       - name: Upload APK
-        uses: actions/upload-artifact@v4  # تم تحديث النسخة هنا
+        uses: actions/upload-artifact@v4
         with:
           name: release-apk
           path: build/app/outputs/flutter-apk/app-release.apk
