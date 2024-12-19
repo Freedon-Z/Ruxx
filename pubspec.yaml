@@ -59,7 +59,7 @@ dependencies:
   just_the_tooltip: ^0.0.12
   substring_highlight: ^1.0.33
   card_swiper: ^3.0.1
-  emoji_picker_flutter: ^2.2.0
+  emoji_picker_flutter: ^2.1.0
   #just_audio: ^0.9.36
   file_picker: ^8.0.0+1
   carousel_slider: 5.0.0
